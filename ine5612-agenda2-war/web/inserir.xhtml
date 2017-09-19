@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Inserir novo contato</title>
+    </h:head>
+    <h:body>
+        <h1>Preencha os campos abaixo</h1>
+        <h:form>
+           <p>Nome: <h:inputText value="#{beanContato.nome}"/></p>
+           <p>Telefone: <h:inputText value="#{beanContato.telefone}"/></p>
+           <p>Endereço: <h:inputText value="#{beanContato.endereco}"/></p>
+           <h:commandButton value="Inserir" action="#{beanContato.inserir}"/>
+           <h:messages style="color:red"/>
+        </h:form>
+         <h:link value="Voltar" outcome="index.xhtml"/>
+    </h:body>
+</html>
